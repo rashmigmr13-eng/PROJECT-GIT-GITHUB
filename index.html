@@ -68,7 +68,7 @@
     <div class="author" id="quoteAuthor">— Unknown</div>
   </div>
 
-  <button onclick="newQuote()">✨ New Quote</button>
+  <button onclick="addNewQuote()">✨ New Quote</button>
 
   <script>
     const quotes = [
@@ -83,7 +83,7 @@
       { text: "Little things make big days.", author: "Unknown" }
     ];
 
-    function newQuote() {
+    function addNewQuote() {
       const random = Math.floor(Math.random() * quotes.length);
       document.getElementById("quoteText").textContent = "“" + quotes[random].text + "”";
       document.getElementById("quoteAuthor").textContent = "— " + quotes[random].author;
